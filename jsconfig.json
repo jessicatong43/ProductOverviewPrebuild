@@ -2,8 +2,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@components/*": ["./client/src/components/*"],
-      "@assets/*": ["./client/src/assets/*"],
+      "Components/*": ["./client/src/components/*"],
+      "Assets/*": ["./client/src/assets/*"],
     },
   },
   "exclude": ["node_modules"]

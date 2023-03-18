@@ -1,6 +1,7 @@
 {
   "extends": "airbnb",
-  "ignorePatterns": ["main.js"],
+  "ignorePatterns": ["main.js", "styles.css"],
+  "css.lint.unknownAtRules": "ignore",
   "env": {
     "browser": true,
     "node": true
@@ -14,10 +15,15 @@
       "typescript": {},
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "alias": {
+        "map": [
+          ["Components", "./client/src/components"],
+          ["Assets", "./client/src/assets"]
+        ],
+        "extensions": [".js", ".jsx"]
       }
-    },
-    "rules": {
-      "react/jsx-filename-extension": [1, { "allow": "as-needed" }]
     }
   }
 }
+

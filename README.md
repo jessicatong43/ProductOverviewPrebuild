@@ -7,13 +7,13 @@ Add folders for client/dist and client/src
 npm init // to create package.json
 
 npm install // build out webpack
-  webpack webpack-cli webpack-dev-server html-webpack-plugin html-webpack-root-element-plugin --save-dev
+  webpack webpack-cli webpack-dev-server html-webpack-plugin --save-dev
   babel babel-cli babel-loader @babel/preset-env @babel/preset-react --save-dev
   eslint eslint-plugin eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-import-resolver-typescript --save-dev
   husky --save-dev
   jest @testing-library/react babel-jest react-test-renderer --save-dev
-  tailwindcss --save-dev
   dotenv
+  tailwindcss
   react react-dom react-redux redux @reduxjs/toolkit @redux-devtools/core
 
 npx install-peerdeps --dev eslint-config-airbnb // to configure eslint for Airbnb styling
@@ -36,3 +36,6 @@ Add aliases to the webpack as needed. For example, you can import from index.js 
       Components: path.resolve(__dirname, '/client/src/components/'),
     },
   },
+
+Created a template HTML with a root div to anchor the application to
+Create index.jsx file as the source file
